@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Nexus Cellular - Shop with us!</title>
+  </head>
+  <nav>
+    <div class="topmenu">
+      <div class="offers">
+        <ul>
+          <li class="nav-list">
+            <img class="nav-icon" src="assets/icons/truck.svg" alt="truck icon"></img
+            ><a href="#">Free Shipping on orders over <strong>$400</strong></a>
+          </li>
+          <li class="nav-list">
+            <img class="nav-icon" src="assets/icons/shield.svg" alt="shield icon"></img
+            ><a href="#">Lifetime Warranty on Parts</a>
+          </li>
+          <li class="nav-list">
+            <img class="nav-icon" src="assets/icons/scissor.svg" alt="scissor icon"></img
+            ><a href="#">Up to <strong>8pm</strong> order cutoffs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li class="nav-list">
+            <a href="#">About Us</a>
+          </li >
+          <li class="nav-list">
+            <a href="#">Blog</a>
+          </li>
+
+          <li class="nav-list">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="navbar">
+      <button onclick="displayHam()"  class="hamburger-menu">
+          <img src="assets/icons/menu.svg" alt="">
+      </button>
+      <div id="hamburger" class="hamcollapse-menu">
+        <a class="ham-items" href="#">Parts
+        </a>
+        <a  class="ham-items" href="#">Accessories
+        </a>
+        <a  class="ham-items" href="#">Devices
+        </a>
+        <a  class="ham-items" href="#">BuyBack
+        </a>
+        <a  class="ham-items menu-special" href="#">% Sales & Deals
+        </a>
+      </div>
+      <div class="brand">
+        <a href="#" class="nav-logo">nexus<span class="nav-logo-2">cellular</span> </a>
+      </div>
+      <div class="inputs-group active-search">
+        
+        <input class="navigation-search" type="search" placeholder="Search..." />
+        <div>
+          <select class="category-select" href="#">
+              <option value="All">All Categories</option>
+              <option value="Mobiles">Mobiles</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Computers">Computers</option>
+              <option value="Accessories">Accessories</option>
+          </select>
+          <button class="nav-search-btn" type="submit"><img src="assets/icons/search.svg" alt="search icon"></button>
+        </div>
+      </div>
+        
+       
+      <div class="navbar-icons">
+        <ul>
+          <li class="nav-list">
+            <a href="#" class="icon-link">
+              <img src="assets/icons/user.svg" class="nav-icon" alt="">
+              <p class="links">Hi user</p>
+            </a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="icon-link">
+              <img src="assets/icons/shopping_bag.svg" class="nav-icon" alt="">
+              <p class="links">Quick Order</p>
+            </a>
+          </li>
+
+          <li class="nav-list">
+            <a href="#" class="icon-link">
+              <img src="assets/icons/cart.svg" class="nav-icon" alt="">
+              <p class="links">Cart</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  </nav>
+  <body>
+    <div class="menu">
+      <div class="menu-list">
+        <a class="menu-items" href="#">Parts
+        </a>
+        <a  class="menu-items" href="#">Accessories
+        </a>
+        <a  class="menu-items menu-active" href="#">Devices
+        </a>
+        <a  class="menu-items" href="#">BuyBack
+        </a>
+        <a  class="menu-items menu-special" href="#">% Sales & Deals
+        </a>
+        <a  class="menu-items menu-special" href="#"><img src="assets/icons/threedots.svg" class="menu-icon" alt="">
+        </a>
+      </div>
+      <div class="menu-phone">
+        <img src="assets/icons/phone.svg" class="nav-icon" alt="A phone icon"><span class="phone-number">Hotline: </span>
+        <a href="#">+1-877-614-1001</a>
+      </div>
+    </div>
+    <div class="breadcrumb-container">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+    </div>
+
+    <h1>Devices</h1>
+    <div class="main-container">
+      <div class="side-filter" id="modal-filter">
+        <section class="applied-filter-container">
+          <button class="close" onclick="closeFilter()">&times;</button>
+          <div class="applied-filters">
+            <p class="filtername">Filter by:</p>
+            <a href="#" class="orange-link">Clear all</a>
+          </div>
+          <div class="filters">
+            <span class="filter-value">Samsung <img src="assets/icons/cross.svg" class="filter-del" alt=""></span>
+            <span class="filter-value">White <img src="assets/icons/cross.svg" class="filter-del" alt=""></span>
+            <span class="filter-value">$250-$900 <img src="assets/icons/cross.svg" class="filter-del" alt=""></span>
+            <span class="filter-value">Onsale <img src="assets/icons/cross.svg" class="filter-del" alt=""></span>
+          </div>
+          
+        </section>
+        <section class="dropdown-filter ">
+          <div class="filtername filter-btn">
+            <p>Model</p>
+            <div class="transparent-btn">
+              <img src="assets/icons/arrow.svg" id="arrow-icon" class="small-icon icon-chevron" alt="Menu indicator">
+            </div>
+          </div>
+          <div class="collapsible-menu" id="collapsible-content">
+            <ul>
+              <li class="filter"><input type="checkbox" id="huawei"><label for="huawei">Huawei <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Xiaomi"><label for="Xiaomi">Xiaomi <span>23</span></label></li>
+              <li class="filter"><input type="checkbox" id="Apple"><label for="Apple">Apple <span>69</span></label></li>
+              <li class="filter"><input type="checkbox" id="Samsung"><label for="Samsung">Samsung <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Realme"><label for="Realme">Realme <span>45</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oppo"><label for="Oppo">Oppo <span>120</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oneplus"><label for="Oneplus">Oneplus <span>3</span></label></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dropdown-filter ">
+          <div class="filtername filter-btn">
+            <p>Product Type</p>
+            <div class="transparent-btn ">
+              <img src="assets/icons/arrow.svg" id="arrow-icon" class="small-icon icon-chevron" alt="Menu indicator">
+            </div>
+          </div>
+          <div class="collapsible-menu" id="collapsible-content">
+            <ul>
+              <li class="filter"><input type="checkbox" id="huawei"><label for="huawei">Huawei <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Xiaomi"><label for="Xiaomi">Xiaomi <span>23</span></label></li>
+              <li class="filter"><input type="checkbox" id="Apple"><label for="Apple">Apple <span>69</span></label></li>
+              <li class="filter"><input type="checkbox" id="Samsung"><label for="Samsung">Samsung <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Realme"><label for="Realme">Realme <span>45</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oppo"><label for="Oppo">Oppo <span>120</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oneplus"><label for="Oneplus">Oneplus <span>3</span></label></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dropdown-filter ">
+          <div class="filtername filter-btn">
+            <p>Grade</p>
+            <div class="transparent-btn">
+              <img src="assets/icons/arrow.svg" id="arrow-icon" class="small-icon icon-chevron" alt="Menu indicator">
+            </div>
+          </div>
+          <div class="collapsible-menu" id="collapsible-content">
+            <ul>
+              <li class="filter"><input type="checkbox" id="huawei"><label for="huawei"><div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                    4 & up
+                  </div> </label></li>
+              <li class="filter"><input type="checkbox" id="Xiaomi"><label for="Xiaomi"><div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    3 & up
+                  </div> </label></li>
+              <li class="filter"><input type="checkbox" id="Apple"><label for="Apple"><div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    2 & up
+                  </div> </label></li>
+              <li class="filter"><input type="checkbox" id="Samsung"><label for="Samsung"><div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    1 & up
+                  </div></label></li>
+              </ul>
+          </div>
+        </section>
+        <section class="dropdown-filter ">
+          <div class="filtername filter-btn">
+            <p>Brand</p>
+            <div class="transparent-btn">
+              <img src="assets/icons/arrow.svg" id="arrow-icon" class="small-icon icon-chevron" alt="Menu indicator">
+            </div>
+          </div>
+          <div class="collapsible-menu" id="collapsible-content">
+            <ul>
+              <li class="filter"><input type="checkbox" id="huawei"><label for="huawei">Huawei <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Xiaomi"><label for="Xiaomi">Xiaomi <span>23</span></label></li>
+              <li class="filter"><input type="checkbox" id="Apple"><label for="Apple">Apple <span>69</span></label></li>
+              <li class="filter"><input type="checkbox" id="Samsung"><label for="Samsung">Samsung <span>32</span></label></li>
+              <li class="filter"><input type="checkbox" id="Realme"><label for="Realme">Realme <span>45</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oppo"><label for="Oppo">Oppo <span>120</span></label></li>
+              <li class="filter"><input type="checkbox" id="Oneplus"><label for="Oneplus">Oneplus <span>3</span></label></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dropdown-filter ">
+          <div class="filtername filter-btn">
+            <p>Color</p>
+            <div class="transparent-btn">
+              <img src="assets/icons/arrow.svg" id="arrow-icon" class="small-icon icon-chevron" alt="Menu indicator">
+            </div>
+          </div>
+          <div class="collapsible-menu" id="collapsible-content">
+            <ul>
+              <li class="filter"><div class="product-color-options">
+                <input type="checkbox" id="huawei"><label for="huawei"></label>
+                  <span class="color-ball color-white"></span>
+                  <span class="color-name">White color</span>
+                </div></label></li>
+              <li class="filter"><div class="product-color-options">
+                  <input type="checkbox" id="Xiaomi"><label for="Xiaomi"></label>
+                  <span class="color-ball color-orange " ></span>
+                  
+                  <span class="color-name">orange color</span>
+                </div></label></li>
+              <li class="filter"><div class="product-color-options">
+                <input type="checkbox" id="Apple"><label for="Apple"></label>
+                  <span class="color-ball color-purple"></span>
+                  <span class="color-name">purple color</span>
+                </div></label></li>
+              </ul>
+          </div>
+        </section>
+        
+        <section class="dropdown-filter">
+          <p class="filtername">Price, $USD</p>
+        </section>
+      </div>
+      <div class="product-container">
+        <div class="product-container-header">
+          <div class="items-count count-responsive">Shown 1024 items</div>
+          <div class="display-settings">
+            <div>
+              <img src="assets/icons/menu.svg" class="small-icon setting-icon setting-selected" alt="">
+              <img src="assets/icons/grid-menu.svg" class="small-icon setting-icon" alt="">
+            
+            </div>
+            <div class="filter-sort" >
+              <img src="assets/icons/sort.svg" class="sort-icon" alt=""><span>Sort</span>
+              <img src="assets/icons/7148724_sort_filter_filtering_filters_icon.svg" class="filter-icon display-filter" alt=""><span>Filter</span>
+            </div>
+            <div class="select-container">
+              <select class="category-select" href="#">
+                <option value="All">Part Type Position</option>
+                <option value="Mobiles">Mobiles</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Computers">Computers</option>
+                <option value="Accessories">Accessories</option>
+              </select>
+            </div>
+            
+          </div>
+        </div>
+        <div class="product-container-main">
+          <div class="product">
+            <div class="product-img-container">
+              <img src="assets/images/samsung_galaxy_f62.jpg" class="product-image" alt="">
+            </div>
+            <div class="product-content">
+              <div class="product-heading">
+                <h2 class="product-name">Samsung Galaxy S21+ 5G 128GB (Grade A) (Handset Only)</h2>
+              </div>
+              <div class="product-configurations">
+                <p class="product-code">SKU: GH82-2231D</p>
+                <div class="product-rating">
+                  <p>4.5</p>
+                  <div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <a href="#" class="orange-link">3,064 reviews</a>
+                </div>
+                <div class="product-color-options">
+                  <span class="color-ball color-white selected"></span>
+                  <span class="color-ball color-orange " ></span>
+                  <span class="color-ball color-purple"></span>
+                  <span class="color-name">White color</span>
+                </div>
+
+              </div>
+              <div class="product-specs">
+                <ul>
+                  <li><span class="product-feature">Operating System </span><span class="feature-detail">Android 10</span></li>
+                  <li><span class="product-feature">Display </span><span class="feature-detail">6.53", IPS</span></li>
+                  <li><span class="product-feature">Display Resolution </span><span class="feature-detail">2340x1080</span></li>
+                  <li><span class="product-feature">CPU </span><span class="feature-detail">Mediatek-Helio G80, 2000mGh, 8 core</span></li>
+                  <li><span class="product-feature">Ram Size </span><span class="feature-detail">8 GB</span></li>
+                  <li><span class="product-feature">Built-in Memory </span><span class="feature-detail">128 GB</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-tail">
+              <div class="product-icons">
+                <img src="assets/icons/bars.svg" alt="">
+                <img src="assets/icons/add_list.svg" alt="">
+              </div>
+              <div class="product-price">
+                <p class="original-price">$488.99</p>
+                <p class="offer-price">$450.00</p>
+              </div>
+              <div class="product-counter">
+                <div class="product-count-decrement">
+                  -
+                </div>
+                <div class="product-count">23</div>
+                <div class="product-count-increment">
+                  +
+                </div>
+                <div class="cart-icon">
+                  <img src="assets/icons/cart-white.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img src="assets/images/samsung_galaxy_f62.jpg" class="product-image" alt="">
+            </div>
+            <div class="product-content">
+              <div class="product-heading">
+                <h2 class="product-name">Samsung Galaxy S21+ 5G 128GB (Grade A) (Handset Only)</h2>
+              </div>
+              <div class="product-configurations">
+                <p class="product-code">SKU: GH82-2231D</p>
+                <div class="product-rating">
+                  <p>4.5</p>
+                  <div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <a href="#" class="orange-link">3,064 reviews</a>
+                </div>
+                <div class="product-color-options">
+                  <span class="color-ball color-white selected"></span>
+                  <span class="color-ball color-orange " ></span>
+                  <span class="color-ball color-purple"></span>
+                  <span class="color-name">White color</span>
+                </div>
+
+              </div>
+              <div class="product-specs">
+                <ul>
+                  <li><span class="product-feature">Operating System </span><span class="feature-detail">Android 10</span></li>
+                  <li><span class="product-feature">Display </span><span class="feature-detail">6.53", IPS</span></li>
+                  <li><span class="product-feature">Display Resolution </span><span class="feature-detail">2340x1080</span></li>
+                  <li><span class="product-feature">CPU </span><span class="feature-detail">Mediatek-Helio G80, 2000mGh, 8 core</span></li>
+                  <li><span class="product-feature">Ram Size </span><span class="feature-detail">8 GB</span></li>
+                  <li><span class="product-feature">Built-in Memory </span><span class="feature-detail">128 GB</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-tail">
+              <div class="product-icons">
+                <img src="assets/icons/bars.svg" alt="">
+                <img src="assets/icons/add_list.svg" alt="">
+              </div>
+              <div class="product-price">
+                <p class="original-price">$488.99</p>
+                <p class="offer-price">$450.00</p>
+              </div>
+              <div class="product-counter">
+                <div class="product-count-decrement">
+                  -
+                </div>
+                <div class="product-count">23</div>
+                <div class="product-count-increment">
+                  +
+                </div>
+                <div class="cart-icon">
+                  <img src="assets/icons/cart-white.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img src="assets/images/samsung_galaxy_f62.jpg" class="product-image" alt="">
+            </div>
+            <div class="product-content">
+              <div class="product-heading">
+                <h2 class="product-name">Samsung Galaxy S21+ 5G 128GB (Grade A) (Handset Only)</h2>
+              </div>
+              <div class="product-configurations">
+                <p class="product-code">SKU: GH82-2231D</p>
+                <div class="product-rating">
+                  <p>4.5</p>
+                  <div>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star rated"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <a href="#" class="orange-link">3,064 reviews</a>
+                </div>
+                <div class="product-color-options">
+                  <span class="color-ball color-white selected"></span>
+                  <span class="color-ball color-orange " ></span>
+                  <span class="color-ball color-purple"></span>
+                  <span class="color-name">White color</span>
+                </div>
+
+              </div>
+              <div class="product-specs">
+                <ul>
+                  <li><span class="product-feature">Operating System </span><span class="feature-detail">Android 10</span></li>
+                  <li><span class="product-feature">Display </span><span class="feature-detail">6.53", IPS</span></li>
+                  <li><span class="product-feature">Display Resolution </span><span class="feature-detail">2340x1080</span></li>
+                  <li><span class="product-feature">CPU </span><span class="feature-detail">Mediatek-Helio G80, 2000mGh, 8 core</span></li>
+                  <li><span class="product-feature">Ram Size </span><span class="feature-detail">8 GB</span></li>
+                  <li><span class="product-feature">Built-in Memory </span><span class="feature-detail">128 GB</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-tail">
+              <div class="product-icons">
+                <img src="assets/icons/bars.svg" alt="">
+                <img src="assets/icons/add_list.svg" alt="">
+              </div>
+              <div class="product-price">
+                <p class="original-price">$488.99</p>
+                <p class="offer-price">$450.00</p>
+              </div>
+              <div class="product-counter">
+                <div class="product-count-decrement">
+                  -
+                </div>
+                <div class="product-count">23</div>
+                <div class="product-count-increment">
+                  +
+                </div>
+                <div class="cart-icon">
+                  <img src="assets/icons/cart-white.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
