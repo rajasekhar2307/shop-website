@@ -484,7 +484,10 @@ h1 {
   height: 0;
   width: 0;
 }
-
+/* Slider */
+.slider {
+  margin-left: 0.8rem;
+}
 /* Create a custom checkbox */
 
 [type="checkbox"] {
